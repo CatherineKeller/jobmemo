@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Public
-app.use(express.static('./public'));
+app.use(express.static('./assets'));
 
 // Routage
 app.use(router);

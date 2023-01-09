@@ -1,5 +1,6 @@
 // import Sortable from 'sortablejs';
-// import { listModule } from './list';
+import { listModule } from './list';
+// import { cardModule } from './card';
 
 const app = {
   init: function () {

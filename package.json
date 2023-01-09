@@ -8,7 +8,9 @@
     "dev": "nodemon index.js",
     "db:tables": "psql -U jobmemo -d jobmemo -f data/create_tables.sql",
     "db:seed": "psql -U jobmemo -d jobmemo -f data/seed_database.sql",
-    "db:reset": "npm run db:tables && npm run db:seed"
+    "db:reset": "npm run db:tables && npm run db:seed",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^8.31.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "vite": "^4.0.4"
   }
 }

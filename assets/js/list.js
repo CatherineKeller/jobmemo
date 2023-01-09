@@ -1,5 +1,6 @@
-// export const listModule = {
-const listModule = {
+import { cardModule } from './card';
+
+export const listModule = {
 
   /**
    * Méthode permettant de rajouter une liste dans le DOM
@@ -32,7 +33,8 @@ const listModule = {
    */
   async getListsFromAPI() {
     try {
-      const response = await fetch('http://localhost:3000/lists');
+      const response = await fetch(`http://localhost:3000/lists`);
+      // const response = await fetch(`${import.meta.env.VITE_API_URL}/lists`);
       if(!response.ok) {
         throw new Error('Erreur de chargement des données');
       }

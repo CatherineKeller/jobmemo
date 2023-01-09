@@ -1,5 +1,6 @@
-const cardModule = {
+export const cardModule = {
   makeCardInDOM(card){
+    console.log(card);
     // Template
     const templateCardElm = document.querySelector('#templateCard');
     // Clone template
@@ -13,8 +14,16 @@ const cardModule = {
 
     // Title
     const titleElm = cloneCardElm.querySelector('.card_title');
-    console.log(card);
     titleElm.textContent = card.title;
+    // Compagny Name
+    const compagnyNameElm = cloneCardElm.querySelector('.card_compagny-name');
+    compagnyNameElm.textContent = card.compagny_name;
+    // Compagny Type
+    const compagnyTypeElm = cloneCardElm.querySelector('.card_compagny-type span');
+    compagnyTypeElm.textContent = card.type_compagny.name;
+    // Status
+    const cardStatusElm = cloneCardElm.querySelector('.card_status span');
+    cardStatusElm.textContent = card.status.name;
 
     // Je récupère le container des listes
     const cardContainerElm = document.querySelector('.list_cards');

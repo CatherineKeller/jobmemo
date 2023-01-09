@@ -1,0 +1,10 @@
+.lists-container {
+  display: flex;
+}
+.list {
+  width: calc(100% / 5);
+  &_title {
+    font-weight: 1.3rem;
+    font-weight: 700;
+  }
+}
