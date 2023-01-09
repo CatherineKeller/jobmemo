@@ -10,7 +10,7 @@
   "extends": "eslint:recommended",
   "rules": {
     "indent": ["error", 2],
-    "quotes": ["error", "double"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
     "no-multi-spaces": "error",
     "no-trailing-spaces": "error",
     "eol-last": "error"
