@@ -15,7 +15,7 @@ Type.hasMany(List, {
   foreignKey: 'type_id'
 });
 List.belongsTo(Type, {
-  as: 'type',
+  as: 'list_type',
   foreignKey: 'type_id'
 });
 
@@ -81,7 +81,7 @@ Type.hasMany(Event, {
   foreignKey: 'type_id'
 });
 Event.belongsTo(Type, {
-  as: 'type',
+  as: 'event_type',
   foreignKey: 'type_id'
 });
 
