@@ -74,6 +74,17 @@ Interview.belongsTo(InterviewType, {
   foreignKey: 'interview_type_id'
 });
 
+// Interview <-> Card
+// One-To-Many
+Card.hasMany(Interview, {
+  as: 'card_interviews',
+  foreignKey: 'card_id'
+});
+Interview.belongsTo(Card, {
+  as: 'card',
+  foreignKey: 'card_id'
+});
+
 // Event <-> Type
 // One-To-Many
 Type.hasMany(Event, {
@@ -92,7 +103,7 @@ Card.hasMany(Event, {
   foreignKey: 'card_id'
 });
 Event.belongsTo(Card, {
-  as: 'card',
+  as: 'card_event',
   foreignKey: 'card_id'
 });
 

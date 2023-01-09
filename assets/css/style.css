@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,14 +53,98 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 3rem;
+}
+
 .lists-container {
   display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .list {
-  width: 20%;
+  width: calc(25% - 0.5rem);
+  background-color: #F2F2F2;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 .list_title {
   font-weight: 1.3rem;
   font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.list.completed {
+  width: calc(100% - 0.5rem);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+  line-height: 1.2;
+}
+.card_status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: right;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+}
+.card_status span {
+  font-weight: 700;
+}
+.card_status.inprogress {
+  background-color: #dfdfdf;
+}
+.card_status.won {
+  background-color: #a5ff7c;
+}
+.card_status.refuse {
+  background-color: #ffc1a5;
+}
+.card_title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card_contact-phone:before {
+  content: "Tél.";
+}
+.card_compagny, .card_contact {
+  margin-top: 0.5rem;
+}
+.card_compagny-type {
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
+}
+.card_compagny-type.esn {
+  background-color: rgb(241, 195, 255);
+}
+.card_compagny-type.pme {
+  background-color: #a9ce97;
+}
+
+.card_infos {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

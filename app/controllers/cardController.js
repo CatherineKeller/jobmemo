@@ -11,6 +11,7 @@ const cardController = {
         { association: 'status' },
         { association: 'candidacy' },
         { association: 'type_compagny' },
+        { association: 'card_interviews' },
       ]
     });
 

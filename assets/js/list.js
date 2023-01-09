@@ -17,10 +17,30 @@ export const listModule = {
     const listElm = cloneListElm.querySelector('[data-list-id]');
     const listId = list.id;
     listElm.dataset.listId = listId;
+    listElm.classList.add(list.list_type.name);
 
     // Title
+    let listName;
+    switch (list.list_type.name) {
+    case 'added':
+      listName = 'Je vais postuler';
+      break;
+    case 'applied':
+      listName = 'J\'ai postulé';
+      break;
+    case 'renewed':
+      listName = 'J\'ai relancé';
+      break;
+    case 'interview':
+      listName = 'J\'ai un entretien';
+      break;
+    case 'completed':
+      listName = 'Terminé';
+      break;
+    default:
+    }
     const titleElm = cloneListElm.querySelector('.list_title');
-    titleElm.textContent = list.list_type.name;
+    titleElm.textContent = listName;
 
     // Je récupère le container des listes
     const listsContainerElm = document.querySelector('.lists-container');
@@ -33,7 +53,7 @@ export const listModule = {
    */
   async getListsFromAPI() {
     try {
-      const response = await fetch(`http://localhost:3000/lists`);
+      const response = await fetch('http://localhost:3000/lists');
       // const response = await fetch(`${import.meta.env.VITE_API_URL}/lists`);
       if(!response.ok) {
         throw new Error('Erreur de chargement des données');

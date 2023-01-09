@@ -10,7 +10,8 @@
     "db:seed": "psql -U jobmemo -d jobmemo -f data/seed_database.sql",
     "db:reset": "npm run db:tables && npm run db:seed",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "frontdev": "vite"
   },
   "repository": {
     "type": "git",

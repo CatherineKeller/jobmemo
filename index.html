@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="steelsheet" href="/assets/css/style.css" />
+  <!-- <link rel="steelsheet" href="./assets/css/style.css" /> -->
+  <style>
+    @import './assets/css/style.css';
+  </style>
   <title>Job Memo</title>
 </head>
 <body>
@@ -24,9 +27,28 @@
     <div class="card" data-card-id="">
       <div class="card_status">Statut : <span></span></div>
       <div class="card_title"></div>
-      <div class="card_compagny-type">Type : <span></span></div>
-      <div class="card_compagny-name"></div>
+      <div class="card_candidacy"></div>
+      <div class="card_compagny card_infos">
+        <strong>Entreprise</strong> : <span class="card_compagny-name"></span>
+        <span class="card_compagny-type">Type : <span></span></span>
+        <div class="card_compagny-address"></div>
+      </div>
+      <div class="card_contact card_infos">
+        <div>
+          <strong>Contact</strong> : <span class="card_contact-name"></span> <span class="card_contact-firstname"></span>
+        </div>
+        <div class="card_contact-email"></div>
+        <div class="card_contact-phone"></div>
+      </div>
+      <div class="card_interviews">
+
+      </div>
     </div>
+  </template>
+  <template id="templateCardInterview">
+    <div class="card_interview-type"></div>
+    <div class="card_interview-date"></div>
+    <div class="card_interview-comment"></div>
   </template>
   <script src="./assets/js/app.js" type="module"></script>
 </body>
