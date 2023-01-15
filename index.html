@@ -17,6 +17,22 @@
       <div class="lists-container"></div>
     </div>
   </section>
+  <div id="card_add">
+    <h2>Ajouter un Job</h2>
+    <form action="" method="POST">
+      <label for="job_title">Titre</label>
+      <input id="job_title" type="text" name="title">
+      
+      <input type="hidden" name="list_id" value="1">
+      <input type="hidden" name="status_id" value="1">
+      <input type="hidden" name="status_id" value="1">
+      <input type="hidden" name="candidacy_id" value="1">
+      <input type="hidden" name="type_compagny_id" value="1">
+
+
+      <button type="submit" class="">Sauvegarder</button>
+    </form>
+  </div>
   <template id="templateList">
     <div class="list" data-list-id="">
       <div class="list_title"></div>
@@ -40,15 +56,17 @@
         <div class="card_contact-email"></div>
         <div class="card_contact-phone"></div>
       </div>
-      <div class="card_interviews">
+      <div class="card_interviews card_infos">
 
       </div>
     </div>
   </template>
   <template id="templateCardInterview">
-    <div class="card_interview-type"></div>
-    <div class="card_interview-date"></div>
-    <div class="card_interview-comment"></div>
+    <div class="interview">
+      <div class="card_interview-type"></div>
+      <div class="card_interview-date"></div>
+      <div class="card_interview-comment"></div>
+    </div>
   </template>
   <script src="./assets/js/app.js" type="module"></script>
 </body>

@@ -101,6 +101,9 @@ strong {
   position: relative;
   line-height: 1.2;
 }
+.card:not(:last-child) {
+  margin-bottom: 1rem;
+}
 .card_status {
   position: absolute;
   top: 0;
@@ -131,7 +134,7 @@ strong {
 .card_contact-phone:before {
   content: "Tél.";
 }
-.card_compagny, .card_contact {
+.card_compagny, .card_contact, .card_interviews {
   margin-top: 0.5rem;
 }
 .card_compagny-type {

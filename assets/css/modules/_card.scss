@@ -9,6 +9,10 @@ strong {
   position: relative;
   line-height: 1.2;
 
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
   &_status {
     position: absolute;
     top: 0;
@@ -44,7 +48,8 @@ strong {
   }
 
   &_compagny,
-  &_contact {
+  &_contact,
+  &_interviews {
     margin-top: .5rem;
   }
 
@@ -61,4 +66,9 @@ strong {
 }
 .card_infos {
   font-size: .9rem;
+}
+
+// Entretiens
+.card_interviews {
+
 }
