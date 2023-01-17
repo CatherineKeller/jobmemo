@@ -1,4 +1,4 @@
-const { Card, List } = require('../models');
+const { Card, List, Status, Candidacy, TypeCompagny, Type } = require('../models');
 
 const cardController = {
   getAllCards: async (_, res) => {
@@ -54,8 +54,17 @@ const cardController = {
       candidacy_id: parseInt(candidacy_id),
       type_compagny_id: parseInt(type_compagny_id),
       list_id: parseInt(list_id),
-      position: position ? parseInt(position) : 0, // On prend la position demandée, mais si cette position est undefined, on met 0
+      position: position ? parseInt(position) : 0, // On prend la position demandée, mais si cette position est undefined, on met 0 
     });
+
+    const status = await Status.findByPk(status_id);
+    card.dataValues.status = status;
+
+    const candidacy = await Candidacy.findByPk(candidacy_id);
+    card.dataValues.candidacy = candidacy;
+
+    const type_compagny = await TypeCompagny.findByPk(type_compagny_id);
+    card.dataValues.type_compagny = type_compagny;
 
     // Réponse
     res.status(201).json(card);

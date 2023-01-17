@@ -2,7 +2,8 @@ import dayjs from 'dayjs';
 
 export const cardModule = {
   makeCardInDOM(card){
-    console.log(card);
+
+    // console.log(card);
     // Template
     const templateCardElm = document.querySelector('#templateCard');
     // Clone template
@@ -137,8 +138,6 @@ export const cardModule = {
         titleInterviews.innerHTML = '<strong>Entretiens</strong>';
       }
       for(const interview of card.card_interviews){
-        let now = dayjs();
-        console.log(now.format('MMM D YYYY'));
         interviewDateElm.textContent = dayjs(interview.date).format('[Le] DD/MM/YYYY [à] HH[h]mm');
 
       }
@@ -158,7 +157,6 @@ export const cardModule = {
 
     // Je récupère les données du formulaire
     const formData = new FormData(formElm);
-
     try {
       // J'appel mon API avec les données du formulaire
       const response = await fetch('http://localhost:3000/card/add', {
@@ -172,6 +170,7 @@ export const cardModule = {
 
       // Je récupère depuis la réponse de mon API les données
       const card = await response.json();
+      console.log("card object",card);
       // Avec les données du formulaire, je vais créer ma carte dans le DOM
       cardModule.makeCardInDOM(card);
 

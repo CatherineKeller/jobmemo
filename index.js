@@ -1,6 +1,7 @@
 require('dotenv').config(); // variables d'environnement
 const express = require('express'); // express
 const router = require('./app/router'); // router
+const multer = require('multer');
 const cors = require('cors'); // cors
 
 const app = express();
@@ -11,10 +12,11 @@ app.use(cors({
   origin: '*', // on autorise tout le monde
 }));
 
-
+const bodyParser = multer();
 // Body parsing middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(bodyParser.none());
 
 // Public
 app.use(express.static('./dist'));
