@@ -1,21 +1,10 @@
-const { Router } = require('express');
-const { mainController } = require ('../controllers');
-const { cardController } = require ('../controllers');
-const { listController } = require ('../controllers');
-const cw = require('./controllerWrapper');
+const express = require('express');
+const apiRouter = require('./api');
+// const websiteRouter = require('./website');
 
-// Création du router principal
-const router = Router();
+const router = express.Router();
 
-router.get('/', cw(mainController.home));
-
-router.post('/card/add', cw(cardController.createCard));
-
-router.get('/cards', cw(cardController.getAllCards));
-
-router.get('/lists', cw(listController.getAllLists));
-
-
-// router.use(mainController.notFound);
+router.use('/api', apiRouter); // api/cadex
+// router.use('/', websiteRouter);
 
 module.exports = router;

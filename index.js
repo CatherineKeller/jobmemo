@@ -1,8 +1,9 @@
 require('dotenv').config(); // variables d'environnement
 const express = require('express'); // express
-const router = require('./app/router'); // router
 const multer = require('multer');
 const cors = require('cors'); // cors
+const router = require('./app/router/api'); // router
+const logger = require('./app/helpers/logger');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,11 +25,6 @@ app.use(express.static('./dist'));
 // Routage
 app.use(router);
 
-// 404
-app.use((req,res)=>{
-  res.status(404).send('Not found');
-});
-
 app.listen(PORT, () => {
-  console.log(`App listening on port http://localhost:${PORT}`)
+  logger.info(`App listening on port http://localhost:${PORT}`);
 });
