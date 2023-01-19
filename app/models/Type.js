@@ -1,5 +1,5 @@
-const sequelize = require('./database');
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./database');
 
 class Type extends Model {}
 
@@ -8,9 +8,13 @@ Type.init({
     type: DataTypes.STRING(75),
     allowNull: false,
   },
+  code: {
+    type: DataTypes.STRING(75),
+    allowNull: false,
+  },
 }, {
   sequelize,
-  tableName: 'type'
+  tableName: 'type',
 });
 
 module.exports = Type;

@@ -4,7 +4,7 @@ import { listModule } from './list';
 // import { cardModule } from './card';
 
 const app = {
-  init: function () {
+  init() {
     console.log('app.init !');
     app.addListenerToActions();
     listModule.getListsFromAPI();
@@ -12,11 +12,11 @@ const app = {
   /**
    * Ajoute les écouteurs d'évènements au chargement de ma page
    */
-  addListenerToActions: function () {
+  addListenerToActions() {
     // Ajout d'une card
     const formAddCardElm = document.querySelector('#card_add form');
     formAddCardElm.addEventListener('submit', cardModule.handleAddCardForm);
-  }
+  },
 };
 
-document.addEventListener('DOMContentLoaded', app.init );
+document.addEventListener('DOMContentLoaded', app.init);

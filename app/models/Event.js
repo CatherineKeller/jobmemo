@@ -1,5 +1,5 @@
-const sequelize = require('./database');
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./database');
 
 class Event extends Model {}
 
@@ -15,7 +15,7 @@ Event.init({
   },
 }, {
   sequelize,
-  tableName: 'event'
+  tableName: 'event',
 });
 
 module.exports = Event;

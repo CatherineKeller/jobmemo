@@ -1,5 +1,5 @@
-const sequelize = require('./database');
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./database');
 
 class Interview extends Model {}
 
@@ -12,10 +12,10 @@ Interview.init({
   date: {
     type: DataTypes.DATE,
     allowNull: false,
-  }
+  },
 }, {
   sequelize,
-  tableName: 'interview'
+  tableName: 'interview',
 });
 
 module.exports = Interview;

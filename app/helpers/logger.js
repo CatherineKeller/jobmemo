@@ -5,12 +5,11 @@ const logger = bunyan.createLogger({
   name: 'Job Memo API',
   streams: [
     {
-      level: 'info',
-      stream: process.stdout, // log INFO and above to stdout
+      level: 'error',
+      path: path.join(__dirname, '../../logs/errors.log'),
     },
     {
-      path: path.join(__dirname, '../../logs/errors.log'),
-      level: 'error',
+      path: path.join(__dirname, '../../logs/requests.log'),
     }],
 });
 

@@ -1,9 +1,11 @@
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-undef */
+/* eslint-disable import/prefer-default-export */
 import dayjs from 'dayjs';
 
 export const cardModule = {
-  makeCardInDOM(card){
-
-    // console.log(card);
+  makeCardInDOM(card) {
+    console.log(card);
     // Template
     const templateCardElm = document.querySelector('#templateCard');
     // Clone template
@@ -25,79 +27,20 @@ export const cardModule = {
 
     // Compagny Type
     const compagnyTypeElm = cloneCardElm.querySelector('.card_compagny-type');
-    let cardType;
-    switch (card.type_compagny.name) {
-    case 'esn':
-      cardType = 'ESN';
-      break;
-    case 'tpe':
-      cardType = 'TPE';
-      break;
-    case 'pme':
-      cardType = 'PME';
-      break;
-    case 'ge':
-      cardType = 'Grande Entreprise';
-      break;
-    case 'startup':
-      cardType = 'Startup';
-      break;
-    default:
-      cardType = '';
-      break;
-    }
-    compagnyTypeElm.classList.add(`${card.type_compagny.name}`);
+    compagnyTypeElm.classList.add(card.type_compagny.code);
     const compagnyTypeSpanElm = compagnyTypeElm.querySelector('span');
-    compagnyTypeSpanElm.textContent = cardType;
+    compagnyTypeSpanElm.textContent = card.type_compagny.name;
 
     // Status
     const cardStatusElm = cloneCardElm.querySelector('.card_status');
-    let cardStatus;
-    switch (card.status.name) {
-    case 'inprogress':
-      cardStatus = 'En cours';
-      cardStatusElm.classList.add('inprogress');
-      break;
-    case 'won':
-      cardStatus = 'Gagné';
-      cardStatusElm.classList.add('won');
-      break;
-    case 'refuse':
-      cardStatus = 'Refusé';
-      cardStatusElm.classList.add('refuse');
-      break;
-    default:
-      cardStatus = '';
-      break;
-    }
     const cardStatusElmSpan = cardStatusElm.querySelector('span');
-    cardStatusElmSpan.textContent = cardStatus;
+    cardStatusElmSpan.textContent = card.status.name;
+    cardStatusElm.classList.add(card.status.code);
 
     // Type candidature
     const candidacyElm = cloneCardElm.querySelector('.card_candidacy');
-    let cardCandidacy;
-    switch (card.candidacy.name) {
-    case 'offer':
-      cardCandidacy = 'Offre d\'emploi';
-      candidacyElm.classList.add('inprogress');
-      break;
-    case 'spontaneous':
-      cardCandidacy = 'Spontané';
-      candidacyElm.classList.add('won');
-      break;
-    case 'network':
-      cardCandidacy = 'Réseau';
-      candidacyElm.classList.add('refuse');
-      break;
-    case 'other':
-      cardCandidacy = 'Autre';
-      candidacyElm.classList.add('other');
-      break;
-    default:
-      cardCandidacy = '';
-      break;
-    }
-    candidacyElm.textContent = cardCandidacy;
+    candidacyElm.textContent = card.candidacy.name;
+    candidacyElm.classList.add(card.candidacy.code);
 
     // Compagny adresse
     const compagnyAdressElm = cloneCardElm.querySelector('.card_compagny-address');
@@ -123,7 +66,7 @@ export const cardModule = {
     cardContainerElm.appendChild(cloneCardElm);
 
     // Entretiens
-    if(card.list_id >= 4) {
+    if (card.list_id >= 4) {
       // Template
       const templateCardInterviewElm = document.querySelector('#templateCardInterview');
       // Clone template
@@ -134,12 +77,11 @@ export const cardModule = {
       const interviewDateElm = cloneCardInterviewElm.querySelector('.card_interview-date');
       const titleInterviews = document.createElement('div');
 
-      if(card.card_interviews.length > 0) {
+      if (card.card_interviews.length > 0) {
         titleInterviews.innerHTML = '<strong>Entretiens</strong>';
       }
-      for(const interview of card.card_interviews){
+      for (const interview of card.card_interviews) {
         interviewDateElm.textContent = dayjs(interview.date).format('[Le] DD/MM/YYYY [à] HH[h]mm');
-
       }
       cardInterviewsContainer.appendChild(titleInterviews);
       cardInterviewsContainer.appendChild(cloneCardInterviewElm);
@@ -149,7 +91,7 @@ export const cardModule = {
    * méthode appeler lors de la soumission du formulaire de création de carte
    * @param {SubmitEvent} event
    */
-  async handleAddCardForm(event){
+  async handleAddCardForm(event) {
     event.preventDefault();
 
     // Je récupère mon formulaire (l'élément HTML)
@@ -161,25 +103,25 @@ export const cardModule = {
       // J'appel mon API avec les données du formulaire
       const response = await fetch('http://localhost:3000/card/add', {
         method: 'POST',
-        body: formData
+        body: formData,
       });
 
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error('Une erreur est survenue');
       }
 
       // Je récupère depuis la réponse de mon API les données
       const card = await response.json();
-      console.log("card object",card);
+      console.log('card object', card);
       // Avec les données du formulaire, je vais créer ma carte dans le DOM
       cardModule.makeCardInDOM(card);
 
       // Je vide le formulaire
       formElm.reset();
-    } catch(e) {
+    } catch (e) {
       console.error(e);
       alert(e);
     }
-  }
+  },
 
-}
+};
