@@ -6,7 +6,7 @@ const express = require('express'); // express
 const expressSwagger = require('express-jsdoc-swagger');
 const multer = require('multer');
 const cors = require('cors'); // cors
-const router = require('./app/routers/api'); // router
+const router = require('./app/routers'); // router
 const logger = require('./app/helpers/logger');
 
 const app = express();
