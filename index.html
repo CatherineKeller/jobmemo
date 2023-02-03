@@ -17,17 +17,50 @@
       <div class="lists-container"></div>
     </div>
   </section>
-  <div id="card_add">
+  <div id="card_add" class="job-add">
     <h2>Ajouter un Job</h2>
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
       <label for="job_title">Titre</label>
       <input id="job_title" type="text" name="title" value="">
+      <div>
+        Entreprise
+        <div>
+          <label for="job_compagnyName">Nom</label>
+          <input id="job_compagnyName" type="text" name="compagny_name" value="">
+        </div>
+        <div>
+          <label for="job_compagnyAdresse">Adresse</label>
+          <input id="job_compagnyAdresse" type="text" name="compagny_address" value="">
+        </div>
+        <div>
+          <label for="job_compagnyLink">Lien Web</label>
+          <input id="job_compagnyLink" type="text" name="compagny_link" value="">
+        </div>
+      </div>
+      <div>
+        Contact
+        <div>
+          <label for="job_contactName">Nom</label>
+          <input id="job_contactName" type="text" name="contact_name" value="">
+        </div>
+        <div>
+          <label for="job_contactFirstName">Prénom</label>
+          <input id="job_contactFirstName" type="text" name="contact_firstname" value="">
+        </div>
+        <div>
+          <label for="job_contactEmail">Email</label>
+          <input id="job_contactEmail" type="email" name="contact_email" value="">
+        </div>
+        <div>
+          <label for="job_contactPhone">Téléphone</label>
+          <input id="job_contactPhone" type="tel" name="contact_phone" value="">
+        </div>
+      </div>
       
       <input type="hidden" name="list_id" value="1">
       <input type="hidden" name="status_id" value="1">
       <input type="hidden" name="candidacy_id" value="1">
       <input type="hidden" name="type_compagny_id" value="1">
-
 
       <button type="submit" class="">Sauvegarder</button>
     </form>

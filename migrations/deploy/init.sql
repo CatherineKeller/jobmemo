@@ -3,25 +3,25 @@
 BEGIN;
 
 CREATE TABLE "type" (
-  "id" SERIAL PRIMARY KEY,
-  "code" VARCHAR(75) NOT NULL,
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "code" VARCHAR(75) NOT NULL UNIQUE,
   "name" VARCHAR(75) NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
 );
 
 CREATE TABLE "list" (
-  "id" SERIAL PRIMARY KEY, 
-  "type_id" INTEGER NOT NULL REFERENCES "type"("id"),
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
   "position" SMALLINT NOT NULL DEFAULT 0,
+  "type_id" INTEGER NOT NULL REFERENCES "type"("id"),
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
 );
 -- added applied renewed interview completed
 
 CREATE TABLE "status" (
-  "id" SERIAL PRIMARY KEY,
-  "code" VARCHAR(75) NOT NULL,
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "code" VARCHAR(75) NOT NULL UNIQUE,
   "name" VARCHAR(75) NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
@@ -29,8 +29,8 @@ CREATE TABLE "status" (
 -- inprogress won refuse
 
 CREATE TABLE "candidacy" (
-  "id" SERIAL PRIMARY KEY,
-  "code" VARCHAR(75) NOT NULL,
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "code" VARCHAR(75) NOT NULL UNIQUE,
   "name" VARCHAR(75) NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
@@ -38,8 +38,8 @@ CREATE TABLE "candidacy" (
 -- offer spontaneous network other
 
 CREATE TABLE "type_compagny" (
-  "id" SERIAL PRIMARY KEY,
-  "code" VARCHAR(75) NOT NULL,
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "code" VARCHAR(75) NOT NULL UNIQUE,
   "name" VARCHAR(75) NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
@@ -47,17 +47,17 @@ CREATE TABLE "type_compagny" (
 -- esn tpe pme ge startup
 
 CREATE TABLE "card" (
-  "id" SERIAL PRIMARY KEY, 
-  "title" VARCHAR(75) NOT NULL DEFAULT '',
-  "description" VARCHAR(225) DEFAULT '',
-  "link" VARCHAR(225) DEFAULT '',
-  "compagny_name" VARCHAR(75) DEFAULT '',
-  "compagny_address" VARCHAR(75) DEFAULT '',
-  "contact_name" VARCHAR(75) DEFAULT '',
-  "contact_firstname" VARCHAR(75) DEFAULT '',
-  "contact_email" VARCHAR(50) DEFAULT '',
-  "contact_phone" VARCHAR(75) DEFAULT '',
-  "notes" VARCHAR(75) DEFAULT '',
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "title" VARCHAR(75) NOT NULL,
+  "description" VARCHAR(225),
+  "link" VARCHAR(225),
+  "compagny_name" VARCHAR(75) NOT NULL UNIQUE,
+  "compagny_address" VARCHAR(75),
+  "contact_name" VARCHAR(75),
+  "contact_firstname" VARCHAR(75),
+  "contact_email" VARCHAR(50),
+  "contact_phone" VARCHAR(30),
+  "notes" VARCHAR(75),
   "position" SMALLINT NOT NULL DEFAULT 0,
   "list_id" INTEGER NOT NULL REFERENCES "list"("id"),
   "status_id" INTEGER NOT NULL REFERENCES "status"("id"),
@@ -65,11 +65,15 @@ CREATE TABLE "card" (
   "type_compagny_id" INTEGER NOT NULL REFERENCES "type_compagny"("id"),
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
+  -- UNIQUE(
+  --   "contact_name",
+  --   "contact_firstname"
+  -- )
 );
 
 CREATE TABLE "interview_type" (
-  "id" SERIAL PRIMARY KEY,
-  "code" VARCHAR(75) NOT NULL,
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "code" VARCHAR(75) NOT NULL UNIQUE,
   "name" VARCHAR(75) NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
@@ -77,8 +81,8 @@ CREATE TABLE "interview_type" (
 -- facetoface remote
 
 CREATE TABLE "interview" (
-  "id" SERIAL PRIMARY KEY, 
-  "comment" VARCHAR(75) DEFAULT '',
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+  "comment" VARCHAR(75),
   "date" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "interview_type_id" INTEGER NOT NULL REFERENCES "interview_type"("id"),
   "card_id" INTEGER NOT NULL REFERENCES "card"("id"),
@@ -87,9 +91,9 @@ CREATE TABLE "interview" (
 );
 
 CREATE TABLE "event" (
-  "id" SERIAL PRIMARY KEY, 
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
   "date" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  "comment" VARCHAR(75) DEFAULT '',
+  "comment" VARCHAR(75),
   "type_id" INTEGER NOT NULL REFERENCES "type"("id"),
   "card_id" INTEGER NOT NULL REFERENCES "card"("id"),
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -99,29 +99,24 @@ export const cardModule = {
 
     // Je récupère les données du formulaire
     const formData = new FormData(formElm);
-    try {
-      // J'appel mon API avec les données du formulaire
-      const response = await fetch('http://localhost:3000/card/add', {
-        method: 'POST',
-        body: formData,
-      });
+    // J'appel mon API avec les données du formulaire
+    const response = await fetch('http://localhost:3000/card/add', {
+      method: 'POST',
+      body: formData,
+    });
 
-      if (!response.ok) {
-        throw new Error('Une erreur est survenue');
-      }
-
-      // Je récupère depuis la réponse de mon API les données
-      const card = await response.json();
-      console.log('card object', card);
-      // Avec les données du formulaire, je vais créer ma carte dans le DOM
-      cardModule.makeCardInDOM(card);
-
-      // Je vide le formulaire
-      formElm.reset();
-    } catch (e) {
-      console.error(e);
-      alert(e);
+    if (!response.ok) {
+      throw new Error('Une erreur est survenue');
     }
+
+    // Je récupère depuis la réponse de mon API les données
+    const card = await response.json();
+    console.log('card object', card);
+    // Avec les données du formulaire, je vais créer ma carte dans le DOM
+    cardModule.makeCardInDOM(card);
+
+    // Je vide le formulaire
+    formElm.reset();
   },
 
 };

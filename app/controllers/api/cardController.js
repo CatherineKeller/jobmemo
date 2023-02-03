@@ -34,7 +34,7 @@ const cardController = {
    * @returns {object} an object with all jobs
    */
   async getAllCards(_, res) {
-    debug('get all jobs');
+    debug('cardController.getAllCards');
     const cards = await Card.findAll({
       order: [
         ['position', 'ASC'],
@@ -57,6 +57,7 @@ const cardController = {
    * @returns {job} an object with the added job
    */
   async createCard(req, res) {
+    debug(req.body, 'cardController.createCard');
     // Parsing
     const {
       title, link, compagny_name, compagny_address, contact_name, contact_firstname, contact_email,

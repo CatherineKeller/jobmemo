@@ -4,3 +4,68 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":8780,"level":50,"msg":"droit refusé pour la table list","time":"2023-01-19T09:19:26.937Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":8780,"level":50,"msg":"droit refusé pour la table list","time":"2023-01-19T09:19:27.123Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":8780,"level":50,"msg":"droit refusé pour la table list","time":"2023-01-19T09:19:28.176Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4564,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:22:36.592Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":15712,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:25:21.788Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":15712,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:25:23.009Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":15712,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:25:25.572Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11348,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:25:45.160Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19984,"level":50,"msg":"Ressource not found","time":"2023-01-19T14:26:35.316Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":6916,"level":50,"msg":"\"title\" is required","time":"2023-01-19T14:31:06.560Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12836,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:30:48.659Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12836,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:51:26.649Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12836,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:51:47.103Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9028,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:52:05.475Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9028,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:52:36.594Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9028,"level":50,"msg":"Ressource not found","time":"2023-01-19T15:53:03.028Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9028,"level":50,"msg":"Ressource not found","time":"2023-01-19T15:53:23.028Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":16848,"level":50,"msg":"Ressource not found","time":"2023-01-19T15:55:00.693Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9488,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T15:55:47.750Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":1440,"level":50,"msg":"Ressource not found","time":"2023-01-19T15:56:13.229Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":1440,"level":50,"msg":"Ressource not found","time":"2023-01-19T15:56:28.767Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11416,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T15:57:06.712Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7360,"level":50,"msg":"\"value\" must be an array","time":"2023-01-19T15:57:33.081Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7444,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T15:58:50.751Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":6644,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T15:59:25.409Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":1772,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:00:12.711Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17216,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:03:28.692Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19024,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:03:43.509Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19024,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:04:42.583Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19024,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:04:57.317Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17196,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:06:57.483Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17196,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:07:12.586Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:09:57.226Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:09:58.388Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:09:59.268Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:09:59.955Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:10:04.203Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:25.286Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:31.387Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:31.994Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:32.578Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:33.067Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:11:33.898Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"Ressource not found","time":"2023-01-19T16:12:36.394Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:12:46.114Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:12:57.675Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7676,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:15:00.498Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":16024,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:17:15.376Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":14036,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:17:44.122Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":14076,"level":50,"msg":"\"title\" is not allowed","time":"2023-01-19T16:18:18.329Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":14076,"level":50,"msg":"\"title\" is not allowed","time":"2023-01-19T16:18:25.990Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17436,"level":50,"msg":"\"compagny_name\" is not allowed","time":"2023-01-19T16:18:55.343Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11276,"level":50,"msg":"\"list_id\" is not allowed","time":"2023-01-19T16:19:17.787Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4744,"level":50,"msg":"\"status_id\" is not allowed","time":"2023-01-19T16:19:38.029Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":14664,"level":50,"msg":"\"candidacy_id\" is not allowed","time":"2023-01-19T16:19:48.561Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4928,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:20:06.377Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4928,"level":50,"msg":"\"link\" is not allowed","time":"2023-01-19T16:20:57.112Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":788,"level":50,"msg":"\"link\" with value \"h://www.hellO.com\" fails to match the required pattern: /^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/","time":"2023-01-19T16:22:06.769Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":16308,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:28:06.596Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18808,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:29:35.371Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20908,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:30:24.757Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5904,"level":50,"msg":"\"compagny_name\" is not allowed","time":"2023-01-19T16:30:55.526Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":21200,"level":50,"msg":"\"contact_email\" is not allowed","time":"2023-01-19T16:31:30.813Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9680,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:31:48.216Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2388,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:33:13.907Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2388,"level":50,"msg":"\"contact_email\" must be a valid email","time":"2023-01-19T16:33:20.840Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2388,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-01-19T16:33:27.118Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2388,"level":50,"msg":"\"contact_email\" must be a valid email","time":"2023-01-19T16:33:29.790Z","v":0}
