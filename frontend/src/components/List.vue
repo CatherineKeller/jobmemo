@@ -61,3 +61,26 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .list {
+    width: calc(100% / 4 - .5rem);
+    background-color: #F2F2F2;
+    padding: 1rem;
+    box-sizing: border-box;
+    &_title {
+      font-weight: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &.completed {
+      width: calc(100% - .5rem);
+    }
+    // &:not(:last-child){
+    //   border-right: 1px solid #666666;
+    // }
+  }
+</style>

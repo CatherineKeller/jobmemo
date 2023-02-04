@@ -94,3 +94,8 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":17120,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-02-04T14:25:50.288Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":17120,"level":50,"msg":"\"compagny_address\" is not allowed to be empty","time":"2023-02-04T14:26:21.335Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":20204,"level":50,"msg":"\"description\" is not allowed to be empty","time":"2023-02-04T14:32:32.235Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:09:04.954Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:09:28.905Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:11:45.047Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:12:11.150Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:12:28.040Z","v":0}
