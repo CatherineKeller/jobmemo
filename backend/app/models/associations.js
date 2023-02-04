@@ -83,6 +83,7 @@ Card.hasMany(Interview, {
 Interview.belongsTo(Card, {
   as: 'card',
   foreignKey: 'card_id',
+  onDelete: 'CASCADE',
 });
 
 // Event <-> Type
@@ -105,6 +106,7 @@ Card.hasMany(Event, {
 Event.belongsTo(Card, {
   as: 'card_event',
   foreignKey: 'card_id',
+  onDelete: 'CASCADE',
 });
 
 // eslint-disable-next-line max-len

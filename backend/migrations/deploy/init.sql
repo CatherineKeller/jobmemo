@@ -85,7 +85,7 @@ CREATE TABLE "interview" (
   "comment" VARCHAR(75),
   "date" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "interview_type_id" INTEGER NOT NULL REFERENCES "interview_type"("id"),
-  "card_id" INTEGER NOT NULL REFERENCES "card"("id"),
+  "card_id" INTEGER NOT NULL REFERENCES "card"("id") ON DELETE CASCADE,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
 );
@@ -95,7 +95,7 @@ CREATE TABLE "event" (
   "date" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "comment" VARCHAR(75),
   "type_id" INTEGER NOT NULL REFERENCES "type"("id"),
-  "card_id" INTEGER NOT NULL REFERENCES "card"("id"),
+  "card_id" INTEGER NOT NULL REFERENCES "card"("id") ON DELETE CASCADE,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at" TIMESTAMPTZ
 );
