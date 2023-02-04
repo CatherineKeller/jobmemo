@@ -251,3 +251,41 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":9964,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-03T14:30:00.453Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":9964,"level":50,"msg":"Ressource not found","time":"2023-02-03T17:04:17.832Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":10796,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-03T17:55:50.812Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24544,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:00:31.847Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11068,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:01:47.649Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23032,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:04:51.250Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24332,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:05:02.694Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11088,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:06:10.496Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24236,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:06:28.536Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23608,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:06:32.703Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4260,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:06:40.082Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12572,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:07:24.920Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12500,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:08:18.367Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12652,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:08:47.116Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2748,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:11:47.540Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17232,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:16:04.784Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":10652,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:23:07.297Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2168,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:24:05.735Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17632,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:24:12.683Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":21840,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:25:11.719Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":10048,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:26:07.462Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":10048,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:26:39.260Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":10048,"level":50,"msg":"\"contact_email\" must be a valid email","time":"2023-02-04T10:26:46.301Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":10048,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:32:35.725Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20448,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:34:13.270Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20448,"level":50,"msg":"la valeur d'une clé dupliquée rompt la contrainte unique « card_compagny_name_key »","time":"2023-02-04T10:34:13.642Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20448,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:34:18.626Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20448,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:34:22.732Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":14020,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:34:50.567Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5032,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:34:56.259Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5032,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:34:56.445Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":152,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:35:25.301Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":152,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:35:25.945Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":152,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:35:27.286Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":4208,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:35:39.952Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23172,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:35:50.594Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23172,"level":50,"msg":"Ressource not found","time":"2023-02-04T10:35:52.033Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5808,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:36:09.797Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":2888,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:37:01.983Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11076,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:37:09.871Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5136,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T10:37:32.397Z","v":0}
