@@ -322,3 +322,57 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:12:11.150Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":17688,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « undefined »","time":"2023-02-04T15:12:28.040Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":7000,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T15:41:33.929Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7000,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T15:58:33.135Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7000,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T15:58:39.754Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7000,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T15:58:57.140Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7000,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T15:59:14.443Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23900,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:01:31.712Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23900,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:01:34.449Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11748,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:01:45.289Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11748,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:01:47.461Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11748,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:01:49.409Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":16172,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:02:35.090Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":16172,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:02:37.712Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":12336,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:03:07.968Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":20172,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:03:10.968Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17380,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:03:51.221Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5640,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:04:38.082Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:04:40.056Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":50,"msg":"la colonne « interview_id » n'existe pas","time":"2023-02-04T16:04:43.372Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":50,"msg":"la colonne cards.interview_id n'existe pas","time":"2023-02-04T16:04:43.405Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":50,"msg":"la colonne cards.interview_id n'existe pas","time":"2023-02-04T16:04:49.000Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":50,"msg":"la colonne cards.interview_id n'existe pas","time":"2023-02-04T16:06:41.041Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":24360,"level":50,"msg":"la colonne Card.interview_id n'existe pas","time":"2023-02-04T16:06:46.255Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":8080,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:08:40.440Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":8080,"level":50,"msg":"la colonne cards.interview_id n'existe pas","time":"2023-02-04T16:08:43.298Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19608,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:09:40.165Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17320,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:09:59.162Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17320,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:10:05.955Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":11120,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:10:24.010Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18036,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:10:26.731Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18036,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:10:28.133Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18036,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:10:29.073Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18036,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:10:37.037Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18036,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:10:37.849Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":17672,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:12:27.836Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18080,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:13:06.739Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18080,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:13:09.180Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18080,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « interview_card_id_fkey » de la table « interview »","time":"2023-02-04T16:13:18.956Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7068,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:14:16.575Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":7068,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T16:16:13.024Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18632,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:16:29.738Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18632,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T16:16:31.359Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18632,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T16:16:32.282Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18632,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T16:48:18.319Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5832,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T16:48:56.788Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":5832,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T16:48:57.175Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":9616,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T17:06:18.340Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":13516,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T17:06:51.385Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":13516,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T17:07:00.459Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":13516,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T17:07:01.808Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18260,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T17:10:40.488Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18260,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T17:10:52.811Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23184,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T17:11:52.173Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23184,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T17:11:57.496Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23700,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-04T17:12:36.577Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23700,"level":50,"msg":"UPDATE ou DELETE sur la table « card » viole la contrainte de clé étrangère « event_card_id_fkey » de la table « event »","time":"2023-02-04T17:12:39.632Z","v":0}
