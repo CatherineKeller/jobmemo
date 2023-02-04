@@ -1,34 +1,19 @@
 const debug = require('debug')('jobmemo:apiRouter');
 
 const { Router } = require('express');
-const { cardController, listController } = require('../../controllers/api');
+const listRouter = require('./listRouter');
+const cardRouter = require('./cardRouter');
 
-const controllerHandler = require('./controllerHandler');
-const cadexErrorController = require('../../controllers/api/errorController');
-
-const validate = require('../../validation/validator');
-const { post: jobPostSchema } = require('../../validation/schemas/card.schema');
+const jobmemoErrorController = require('../../controllers/api/errorController');
 
 // Création du router principal
-const router = Router();
+const mainRouter = new Router();
 
-// router.post('/card/add', controllerHandler(cardController.createCard));
-router.post('/card/add', validate(jobPostSchema, 'body'), controllerHandler(cardController.createCard));
-
-router.get('/cards', controllerHandler(cardController.getAllCards));
-
-/**
- * GET /api/lists
- * @summary Get all jobs
- *
- * @return {job} 200 - success response
- * @return {error} 400 - bad request
- */
-debug('adding GET /lists route');
-router.get('/lists', controllerHandler(listController.getAllLists));
+mainRouter.use(listRouter);
+mainRouter.use(cardRouter);
 
 // Display Errors
-router.use(cadexErrorController.error404);
-router.use(cadexErrorController.errorHandler);
+mainRouter.use(jobmemoErrorController.error404);
+mainRouter.use(jobmemoErrorController.errorHandler);
 
-module.exports = router;
+module.exports = mainRouter;
