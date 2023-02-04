@@ -3,6 +3,7 @@ const debug = require('debug')('jobmemo:apiRouter');
 const { Router } = require('express');
 const listRouter = require('./listRouter');
 const cardRouter = require('./cardRouter');
+const typeCompagnyController = require('./typeCompagnyRouter');
 
 const jobmemoErrorController = require('../../controllers/api/errorController');
 
@@ -11,6 +12,7 @@ const mainRouter = new Router();
 
 mainRouter.use(listRouter);
 mainRouter.use(cardRouter);
+mainRouter.use(typeCompagnyController);
 
 // Display Errors
 mainRouter.use(jobmemoErrorController.error404);
