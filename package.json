@@ -17,5 +17,8 @@
   "homepage": "https://github.com/CatherineKeller/jobmemo#readme",
   "dependencies": {
     "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "sass": "^1.58.0"
   }
 }

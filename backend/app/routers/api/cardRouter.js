@@ -5,8 +5,8 @@ const { cardController } = require('../../controllers/api');
 
 const controllerHandler = require('./controllerHandler');
 
-const validate = require('../../validation/validator');
-const { post: jobPostSchema } = require('../../validation/schemas/card.schema');
+// const validate = require('../../validation/validator');
+// const { post: jobPostSchema } = require('../../validation/schemas/card.schema');
 
 // Création du router principal
 const router = Router();

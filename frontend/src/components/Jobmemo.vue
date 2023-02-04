@@ -39,6 +39,11 @@
   }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .lists-container {
+    display: flex;
+    column-gap: .5rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+  }
 </style>
