@@ -11,7 +11,6 @@ Event.init({
   comment: {
     type: DataTypes.STRING(75),
     allowNull: false,
-    defaultValue: '',
   },
 }, {
   sequelize,

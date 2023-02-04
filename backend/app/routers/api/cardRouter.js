@@ -12,8 +12,9 @@ const { post: jobPostSchema } = require('../../validation/schemas/card.schema');
 const router = Router();
 
 router.get('/cards', controllerHandler(cardController.getAllCards));
-// router.get('/cards/:id', controllerHandler(cardController.getOneCard));
-router.post('/cards', validate(jobPostSchema, 'body'), controllerHandler(cardController.createCard));
+router.get('/cards/:id', controllerHandler(cardController.getOneCard));
+// router.post('/cards', validate(jobPostSchema, 'body'), controllerHandler(cardController.createCard));
+router.post('/cards', controllerHandler(cardController.createCard));
 router.patch('/cards/:id', controllerHandler(cardController.updateCard));
 router.delete('/cards/:id', controllerHandler(cardController.deleteCard));
 

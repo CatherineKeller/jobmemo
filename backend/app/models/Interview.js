@@ -7,7 +7,6 @@ Interview.init({
   comment: {
     type: DataTypes.STRING(75),
     allowNull: false,
-    defaultValue: '',
   },
   date: {
     type: DataTypes.DATE,

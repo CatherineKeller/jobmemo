@@ -49,7 +49,11 @@ const cardController = {
     });
 
     // Réponse
-    res.status(200).json(cards);
+    return res.status(200).json(cards);
+  },
+
+  async getOneCard(_, res) {
+
   },
 
   /**

@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-const emailPattern = Joi.string().min(3).pattern(/^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]{2,}[.][a-zA-Z]{2,3}$/);
+// const emailPattern = Joi.string().min(3).pattern(/^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]{2,}[.][a-zA-Z]{2,3}$/);
 const linkPattern = Joi.string().pattern(/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/);
 
 const schemas = {
@@ -14,16 +14,21 @@ const schemas = {
   //   }),
   // ),
   post: Joi.object({
-    title: Joi.string(),
-    compagny_name: Joi.string(),
+    title: Joi.string().required(),
+    description: Joi.string(),
+    link: linkPattern,
+    compagny_name: Joi.string().required(),
     compagny_address: Joi.string(),
+    contact_name: Joi.string(),
+    contact_firstname: Joi.string(),
+    contact_email: Joi.string().email(),
+    contact_phone: Joi.string(),
+    notes: Joi.string(),
     position: Joi.number().integer().greater(0),
-    list_id: Joi.number().integer(),
     status_id: Joi.number().integer(),
     candidacy_id: Joi.number().integer(),
     type_compagny_id: Joi.number().integer(),
-    link: linkPattern,
-    contact_email: Joi.string().email(),
+    list_id: Joi.number().integer(),
   }),
 };
 
