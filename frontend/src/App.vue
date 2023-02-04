@@ -1,8 +1,6 @@
 <template>
-  <div id="app">
-    <Header />
-    <Jobmemo />
-  </div>
+  <Header />
+  <Jobmemo />
 </template>
 
 <script>

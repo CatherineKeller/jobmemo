@@ -5,6 +5,8 @@
         v-for="list of lists"
         :key="list.id"
         :list="list"
+        @cardCreated="refreshLists()"
+        @cardDeleted="refreshLists()"
       />
     </div>
   </main>

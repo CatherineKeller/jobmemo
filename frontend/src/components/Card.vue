@@ -1,5 +1,6 @@
 <template>
   <div class="card" v-bind:data-card-id="card.id">
+    <button class="delete" @click="deleteCard">X</button>
     <div class="card_status" :class=[card.status.code]>
       Statut : {{ card.status.name }}
     </div>
@@ -42,6 +43,8 @@
 
 <script>
   import Interview from "./Interview.vue";
+  import { deleteCard } from "../service/database";
+
   export default {
     components: {
       Interview
@@ -52,5 +55,12 @@
     data() {
 
     },
+    methods: {
+      async deleteCard() {
+        console.log("deleteCard()");
+        await deleteCard(this.card.id);
+        this.$emit("deleted");
+      }
+    }
   }
 </script>
