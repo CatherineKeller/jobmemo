@@ -50,3 +50,9 @@ export async function deleteCard(cardId) {
     method: "DELETE"
   });
 }
+export async function fetchAllTypesCompagny() {
+  const httpResponse = await fetch(`${apiBaseUrl}/typescompagny`);
+  const typescompagny = await httpResponse.json();
+  console.log(typescompagny);
+  return typescompagny;
+}
