@@ -53,6 +53,10 @@ export async function deleteCard(cardId) {
 export async function fetchAllTypesCompagny() {
   const httpResponse = await fetch(`${apiBaseUrl}/typescompagny`);
   const typescompagny = await httpResponse.json();
-  console.log(typescompagny);
   return typescompagny;
+}
+export async function fetchAllCandidacies() {
+  const httpResponse = await fetch(`${apiBaseUrl}/candidacies`);
+  const candidacies = await httpResponse.json();
+  return candidacies;
 }

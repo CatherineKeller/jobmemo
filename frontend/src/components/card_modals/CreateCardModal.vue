@@ -7,6 +7,15 @@
       <form action="" method="POST">
         <label for="job_title">Titre *</label>
         <input id="job_title" type="text" v-model="title">
+        <div>
+          <label for="job_candidacy">Type d'offre</label>
+          <select id="job_candidacy" v-model="candidacy_id" name="candidacy_id">
+            <option disabled value="">Choisissez</option>
+            <option v-for="candidacy in candidacies" :key="candidacy.id" :value="candidacy.id">
+              {{ candidacy.name }}
+            </option>
+          </select>
+        </div>
         <label for="job_description">Description</label>
         <input id="job_description" type="text" v-model="description" name="description">
         <div>
@@ -54,7 +63,6 @@
         </div>
         <input type="hidden" v-model="list_id" name="list_id">
         <input type="hidden" v-model="status_id" name="status_id">
-        <input type="hidden" v-model="candidacy_id" name="candidacy_id">
       </form>
     </template>
 
@@ -63,8 +71,7 @@
 </template>
 
 <script>
-  import { createCard } from "../../service/database";
-  import { fetchAllTypesCompagny } from "../../service/database";
+  import { createCard, fetchAllTypesCompagny, fetchAllCandidacies } from "../../service/database";
   import Modal from "./Modal.vue";
 
   export default {
@@ -88,14 +95,16 @@
         notes: '',
         position: 1,
         status_id: 1,
-        candidacy_id: 1,
-        type_compagny_id: 1,
+        candidacy_id: '',
+        type_compagny_id: '',
         list_id: this.listId,
         typesCompagny: [],
+        candidacies: [],
       }
     },
     async created() {
       this.listTypesCompagny();
+      this.listCandidacies();
     },
     methods: {
       async createCard() {
@@ -124,8 +133,13 @@
       },
       async listTypesCompagny() {
         this.typesCompagny = await fetchAllTypesCompagny();
-        console.log(typesCompagny);
         if (!this.typesCompagny) {
+          throw new Error('Erreur de chargement des données');
+        }
+      },
+      async listCandidacies() {
+        this.candidacies = await fetchAllCandidacies();
+        if (!this.candidacies) {
           throw new Error('Erreur de chargement des données');
         }
       }
