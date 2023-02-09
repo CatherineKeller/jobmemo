@@ -11,10 +11,17 @@
         @deleted="$emit('cardDeleted')"
       />
     </div>
-    <CreateCardModal
-      :listId="list.id"
-      @created="$emit('cardCreated')"
-    />
+    <button @click="showModal = true">+</button>
+    <Teleport to="#modals">
+      <CreateCardModal
+        v-show="showModal"
+        @close-modal="showModal = false"
+        :listId="list.id"
+        :typesList="typesList"
+        :key="list.id"
+        @created="$emit('cardCreated')"
+      />
+    </Teleport>
   </div>
 </template>
 
@@ -29,12 +36,17 @@
     },
     props: {
       list: Object,
+      // typesCompagny: Array,
+      // typesCandidacies: Array,
+      typesList: Object,
     },
     data() {
       return {
         listTitle: this.listname(this.list),
+        showModal: false
       }
     },
+    
     methods: {
       listname(list) {
         let listNameFr;
@@ -57,7 +69,8 @@
           default:
         }
         return listNameFr;
-      }
+      },
+
     }
   }
 </script>
