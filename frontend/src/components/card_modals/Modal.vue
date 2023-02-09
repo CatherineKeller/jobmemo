@@ -1,18 +1,18 @@
 <template>
   <div v-bind:id="listId" class="modal-overlay">
     <div class="modal">
-      <header class="modal-card-head">
-        <div class="modal-card-title">
+      <header class="modal_head">
+        <div class="modal_head-title">
           <slot name="title"></slot>
         </div>
-        <button class="modal-close" aria-label="close" @click="closeModal">X</button>
+        <button class="modal_head-close" aria-label="close" @click="closeModal">✕</button>
       </header>
-      <section class="modal-card-body">
+      <section class="modal_body">
         <slot name="body"></slot>
       </section>
-      <footer class="modal-card-foot">
-        <button type="submit" class="button is-success" @click="sendModal">Envoyer</button>
-        <button class="button" @click="cancelModal">Annuler</button>
+      <footer class="modal_foot">
+        <button type="submit" class="modal_button modal_button-action" @click="sendModal">Envoyer</button>
+        <button class="modal_button modal_button-cancel" @click="cancelModal">Annuler</button>
       </footer>
     </div>
   </div>
@@ -39,12 +39,16 @@
 
 <style lang="scss" scoped>
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   background-color: white;
-  height: 500px;
-  width: 500px;
-  margin-top: 10%;
-  padding: 60px 0;
+  height: 80vh;
+  min-height: 670px;
+  max-height: 700px;
+  width: 80%;
+  margin-top: 10vh;
   border-radius: 20px;
 
   &-overlay {
@@ -55,10 +59,102 @@
     right: 0;
     display: flex;
     justify-content: center;
-    background-color: #000000da;
+    background-color: rgba(0,0,0,.7);
   }
   &-close {
     cursor: pointer;
+  }
+  // Head de la modale
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 3rem ;
+    background-color: #f2f2f2;
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    color: #5c5c5c;
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    &-close {
+      background-color: transparent;
+      border: none;
+      font-size: 1.5rem;
+      transition: all .5s;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #5c5c5c;
+        color: white;
+      }
+    }
+  }
+
+  // Body de la modale
+  &_body {
+    padding: 2rem 3rem;
+    text-align: left;
+
+    &-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+
+  // Footer de la modale
+  &_foot {
+    height: 5rem;
+  }
+
+  // Buttons de la modale
+  @mixin darkenColor($color) {
+    &:hover {
+      background-color: darken($color, 20%);
+    }
+  }
+  $color-action: #43ad2e;
+  $color-cancel: #e0e0e0;
+  &_button {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .5s;
+    margin: 0 1rem;
+    background-color: #F2F2F2;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &-action {
+      background-color: $color-action;
+      color: white;
+      @include darkenColor($color-action);
+    }
+    &-cancel {
+      background-color: $color-cancel;
+      @include darkenColor($color-cancel);
+    }
+
+  }
+
+
+}
+.modal::v-deep .modal_body {
+  &-title {
+    font-weight: 700;
+    margin: 1rem 0;
   }
 }
 </style>

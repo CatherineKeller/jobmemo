@@ -13,9 +13,7 @@
       <span class="card_compagny-name">
         {{ card.compagny_name }}
       </span>
-      <span class="card_compagny-type" :class=[card.type_compagny.code]>
-        Type : {{ card.type_compagny.name }}
-      </span>
+      <span class="card_compagny-type card-tag" :class=[card.type_compagny.code]>Type : {{ card.type_compagny.name }}</span>
       <div class="card_compagny-address">
         {{ card.compagny_address }}
       </div>
@@ -78,6 +76,11 @@
       margin-bottom: 1rem;
     }
 
+    &-tag {
+      margin-left: .5rem;
+      white-space: nowrap;
+    }
+
     &_status {
       position: absolute;
       top: 0;
@@ -132,6 +135,9 @@
       }
       &.grande {
         background-color: #a9ce97;
+      }
+      &.cabinet_recrutement {
+        background-color: #d8c7eb;
       }
     }
   }
