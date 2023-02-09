@@ -13,9 +13,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // On autorise les requêtes Cross-Origin
-app.use(cors({
-  origin: '*', // on autorise tout le monde
-}));
+app.use('/api', cors({ // On autorise les Cross origin requests uniquement pour les routes de l'API.
+  origin: '*', // On autorise toutes les origines.
+}), router);
 
 const swaggerOptions = {
   info: {
@@ -52,7 +52,7 @@ app.use(express.json());
 app.use(bodyParser.none());
 
 // Public
-app.use(express.static('./dist'));
+// app.use(express.static('./dist'));
 
 // Routage
 app.use(router);

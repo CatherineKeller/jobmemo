@@ -4,6 +4,7 @@ export async function fetchAllLists() {
   const httpResponse = await fetch(`${apiBaseUrl}/lists`);
   const lists = await httpResponse.json();
   console.log(lists);
+  // await (await fetch(url)).json()
   return lists;
 }
 export async function createCard({ 

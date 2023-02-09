@@ -1,6 +1,8 @@
 <template>
   <Modal
-    @send="createCard()"
+    :listId="listId"
+    @close-modal="$emit('close-modal')"
+    @send-modal="createCard()"
   >
     <template #title>Ajouter un nouveau Job</template>
     <template #body>
@@ -11,7 +13,7 @@
           <label for="job_candidacy">Type d'offre</label>
           <select id="job_candidacy" v-model="candidacy_id" name="candidacy_id">
             <option disabled value="">Choisissez</option>
-            <option v-for="candidacy in candidacies" :key="candidacy.id" :value="candidacy.id">
+            <option v-for="candidacy in typesList.typesCandidacies" :key="candidacy.id" :value="candidacy.id">
               {{ candidacy.name }}
             </option>
           </select>
@@ -56,7 +58,7 @@
           <label for="job_typeCompagny">Type d'entreprise</label>
           <select id="job_typeCompagny" v-model="type_compagny_id" name="type_compagny_id">
             <option disabled value="">Choisissez</option>
-            <option v-for="type in typesCompagny" :key="type.id" :value="type.id">
+            <option v-for="type in typesList.typesCompagny" :key="type.id" :value="type.id">
               {{ type.name }}
             </option>
           </select>
@@ -79,11 +81,15 @@
       Modal,
     },
     props: {
-      listId: Number
+      listId: Number,
+      // modaleTypesCompagny: Array,
+      // modaleTypesCandidacies: Array,
+      typesList: Object,
     },
+    // inject: ['listsObject'],
     data() {
       return {
-        title: "",
+        title: '',
         description: '',
         link: 'https://',
         compagny_name: '',
@@ -98,14 +104,12 @@
         candidacy_id: '',
         type_compagny_id: '',
         list_id: this.listId,
-        typesCompagny: [],
-        candidacies: [],
       }
     },
-    async created() {
-      this.listTypesCompagny();
-      this.listCandidacies();
-    },
+    // async created() {
+    //   this.listTypesCompagny();
+    //   this.listCandidacies();
+    // },
     methods: {
       async createCard() {
         console.log("createCard()");
@@ -128,21 +132,34 @@
         };
         console.log(cardToCreate);
         await createCard(cardToCreate);
-        // this.content = "";
         this.$emit("created");
+
+        // Initialisation des champs
+        this.title = '';
+        this.description ='';
+        this.link = 'https://';
+        this.compagny_name = '';
+        this.compagny_address = '';
+        this.contact_name = '';
+        this.contact_firstname = '';
+        this.contact_email = '';
+        this.contact_phone = '';
+        this.notes = '';
+        this.candidacy_id = '';
+        this.type_compagny_id = '';
       },
-      async listTypesCompagny() {
-        this.typesCompagny = await fetchAllTypesCompagny();
-        if (!this.typesCompagny) {
-          throw new Error('Erreur de chargement des données');
-        }
-      },
-      async listCandidacies() {
-        this.candidacies = await fetchAllCandidacies();
-        if (!this.candidacies) {
-          throw new Error('Erreur de chargement des données');
-        }
-      }
+      // async listTypesCompagny() {
+      //   this.typesCompagny = await fetchAllTypesCompagny();
+      //   if (!this.typesCompagny) {
+      //     throw new Error('Erreur de chargement des données');
+      //   }
+      // },
+      // async listCandidacies() {
+      //   this.candidacies = await fetchAllCandidacies();
+      //   if (!this.candidacies) {
+      //     throw new Error('Erreur de chargement des données');
+      //   }
+      // }
     }
   };
 </script>

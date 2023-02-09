@@ -10,8 +10,12 @@
   export default {
     components: {
       Header,
-      Jobmemo
-    }
+      Jobmemo,
+    },
+    data() {
+      return {
+      }
+    },    
   }
 </script>
 

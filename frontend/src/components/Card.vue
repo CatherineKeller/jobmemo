@@ -52,9 +52,6 @@
     props: {
       card: Object,
     },
-    data() {
-
-    },
     methods: {
       async deleteCard() {
         console.log("deleteCard()");
@@ -128,6 +125,12 @@
         background-color: rgb(241, 195, 255);
       }
       &.pme {
+        background-color: #a9ce97;
+      }
+      &.tpe {
+        background-color: #a9ce97;
+      }
+      &.grande {
         background-color: #a9ce97;
       }
     }
