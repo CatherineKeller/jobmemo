@@ -19,6 +19,8 @@
   }
 </script>
 
-<style>
-
+<style lang="scss">
+  .error {
+    color: red;
+  }
 </style>

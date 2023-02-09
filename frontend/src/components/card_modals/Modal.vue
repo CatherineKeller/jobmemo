@@ -12,7 +12,7 @@
       </section>
       <footer class="modal-card-foot">
         <button type="submit" class="button is-success" @click="sendModal">Envoyer</button>
-        <button class="button" @click="cancel">Annuler</button>
+        <button class="button" @click="cancelModal">Annuler</button>
       </footer>
     </div>
   </div>
@@ -26,15 +26,13 @@
     methods: {
       sendModal() {
         this.$emit('send-modal');
-        this.closeModal();
       },
-      cancel() {
-        // this.$emit('cancel');
-        this.closeModal();
+      cancelModal() {
+        this.$emit('cancel-modal');
       },
       closeModal() {
         this.$emit('close-modal');
-      }
+      },
     }
   }
 </script>
