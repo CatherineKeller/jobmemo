@@ -11,17 +11,19 @@
         @deleted="$emit('cardDeleted')"
       />
     </div>
-    <button @click="showModal = true">+</button>
-    <Teleport to="#modals">
-      <CreateCardModal
-        v-show="showModal"
-        @close-modal="showModal = false"
-        :listId="list.id"
-        :typesList="typesList"
-        :key="list.id"
-        @created="$emit('cardCreated')"
-      />
-    </Teleport>
+    <div v-if="list.list_type.code != 'completed'">
+      <button @click="showModal = true" class="button">+ Ajouter un Job</button>
+      <Teleport to="#modals">
+        <CreateCardModal
+          v-show="showModal"
+          @close-modal="showModal = false"
+          :listId="list.id"
+          :typesList="typesList"
+          :key="list.id"
+          @created="$emit('cardCreated')"
+        />
+      </Teleport>
+    </div>
   </div>
 </template>
 
@@ -81,6 +83,10 @@
     background-color: #F2F2F2;
     padding: 1rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+
     &_title {
       font-weight: 1.3rem;
       font-weight: 700;
@@ -88,9 +94,22 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
+    &_cards {
+      flex-grow: 1;
+    }
 
     &.completed {
       width: calc(100% - .5rem);
+      & .list_cards {
+        display: flex;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        flex-wrap: wrap;
+      }
+      & .card {
+        margin: 0;
+        width: 300px;
+      }
     }
     // &:not(:last-child){
     //   border-right: 1px solid #666666;
