@@ -70,6 +70,7 @@
     display: flex;
     justify-content: center;
     background-color: rgba(0,0,0,.7);
+    z-index: 10;
   }
   &-close {
     cursor: pointer;
