@@ -27,7 +27,7 @@ export const schemas = Joi.object({
     }),
     contact_phone: Joi.string().allow(''),
     notes: Joi.string().allow(''),
-    position: Joi.number().integer().greater(0).allow(''),
+    position: Joi.number().integer().greater(0).required(),
     status_id: Joi.number().integer().required(),
     candidacy_id: Joi.number().integer().required().messages({
       'number.base': `Le type d'offre est obligatoire`,

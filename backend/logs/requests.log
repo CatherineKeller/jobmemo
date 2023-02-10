@@ -425,3 +425,15 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":21688,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-08T17:05:16.345Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":13656,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-08T17:05:18.527Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-08T17:05:53.843Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T11:59:28.466Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:00:21.711Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:01:10.882Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:08:15.979Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T14:01:44.277Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":1056,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:11:06.976Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":19368,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:11:36.631Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":18992,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:12:24.111Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":6652,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:13:13.352Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":8716,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:13:48.089Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":8716,"level":50,"msg":"\"contact_email\" is not allowed to be empty","time":"2023-02-10T08:14:42.278Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":13552,"level":30,"msg":"App listening on port http://localhost:3000","time":"2023-02-10T08:15:15.203Z","v":0}

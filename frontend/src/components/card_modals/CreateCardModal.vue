@@ -81,7 +81,8 @@
         <input type="hidden" v-model="status_id" name="status_id">
       </form>
     </template>
-
+    <template #valid>Ajouter</template>
+    <template #cancel>Annuler</template>
   </Modal>
 
 </template>

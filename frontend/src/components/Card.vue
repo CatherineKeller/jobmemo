@@ -1,6 +1,15 @@
 <template>
   <div class="card" v-bind:data-card-id="card.id">
-    <button class="delete" @click="deleteCard">X</button>
+    <button @click="showModal = true; toggleClass();" class="delete">X</button>
+    <Teleport to="#modals">
+      <DeleteCardModal
+        v-if="showModal"
+        @close-modal="showModal = false; deleteIsActive = false;"
+        @send-modal="deleteCard()"
+        :class="classConfirmDelete"
+      />
+    </Teleport>
+
     <div class="card_status" :class=[card.status.code]>
       Statut : {{ card.status.name }}
     </div>
@@ -41,16 +50,32 @@
 
 <script>
   import Interview from "./Interview.vue";
+  import DeleteCardModal from './card_modals/DeleteCardModal.vue';
   import { deleteCard } from "../service/database";
 
   export default {
     components: {
-      Interview
+      Interview,
+      DeleteCardModal,
     },
     props: {
       card: Object,
     },
+    data() {
+      return {
+        showModal: false,
+        deleteIsActive: false,
+      }
+    },
+    computed: {
+      classConfirmDelete() {
+        return this.deleteIsActive ? 'tiny' : ''
+      }
+    },
     methods: {
+      toggleClass() {
+        this.deleteIsActive = !this.deleteIsActive
+      },
       async deleteCard() {
         console.log("deleteCard()");
         await deleteCard(this.card.id);

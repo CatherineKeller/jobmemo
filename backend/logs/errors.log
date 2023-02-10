@@ -134,3 +134,9 @@
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":12556,"level":50,"msg":"Ressource not found","time":"2023-02-04T18:08:54.348Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":18764,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-08T15:13:29.854Z","v":0}
 {"name":"Job Memo API","hostname":"Catherine-PC","pid":18764,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-08T15:19:43.793Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T11:59:28.466Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:00:21.711Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:01:10.882Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T12:08:15.979Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":23280,"level":50,"msg":"syntaxe en entrée invalide pour le type integer : « NaN »","time":"2023-02-09T14:01:44.277Z","v":0}
+{"name":"Job Memo API","hostname":"Catherine-PC","pid":8716,"level":50,"msg":"\"contact_email\" is not allowed to be empty","time":"2023-02-10T08:14:42.278Z","v":0}

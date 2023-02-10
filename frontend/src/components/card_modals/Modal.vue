@@ -1,19 +1,21 @@
 <template>
-  <div v-bind:id="listId" class="modal-overlay">
-    <div class="modal">
-      <header class="modal_head">
-        <div class="modal_head-title">
-          <slot name="title"></slot>
-        </div>
-        <button class="modal_head-close" aria-label="close" @click="closeModal">✕</button>
-      </header>
-      <section class="modal_body">
-        <slot name="body"></slot>
-      </section>
-      <footer class="modal_foot">
-        <button type="submit" class="modal_button modal_button-action" @click="sendModal">Envoyer</button>
-        <button class="modal_button modal_button-cancel" @click="cancelModal">Annuler</button>
-      </footer>
+  <div v-bind:id="listId" class="modal-wrapper">
+    <div class="modal-overlay">
+      <div class="modal">
+        <header class="modal_head">
+          <div class="modal_head-title">
+            <slot name="title"></slot>
+          </div>
+          <button class="modal_head-close" aria-label="close" @click="closeModal">✕</button>
+        </header>
+        <section class="modal_body">
+          <slot name="body"></slot>
+        </section>
+        <footer class="modal_foot">
+          <button type="submit" class="modal_button modal_button-action" @click="sendModal"><slot name="valid"></slot></button>
+          <button class="modal_button modal_button-cancel" @click="cancelModal"><slot name="cancel"></slot></button>
+        </footer>
+      </div>
     </div>
   </div>
 </template>
@@ -38,6 +40,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 .modal {
   display: flex;
   flex-direction: column;
@@ -50,6 +53,13 @@
   width: 80%;
   margin-top: 10vh;
   border-radius: 20px;
+
+  .tiny & {
+    min-height: 200px;
+    max-height: 100px;
+    width: 700px;
+    margin-top: 25vh;
+  }
 
   &-overlay {
     position: fixed;
@@ -114,7 +124,17 @@
   &_foot {
     height: 5rem;
   }
+}
 
+.modal::v-deep .modal_body {
+  &-title {
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+}
+
+
+.modal::v-deep .modal_foot {
   // Buttons de la modale
   @mixin darkenColor($color) {
     &:hover {
@@ -123,7 +143,7 @@
   }
   $color-action: #43ad2e;
   $color-cancel: #e0e0e0;
-  &_button {
+  & .modal_button {
     border: none;
     border-radius: 1rem;
     padding: 1rem 2rem;
@@ -146,15 +166,6 @@
       background-color: $color-cancel;
       @include darkenColor($color-cancel);
     }
-
-  }
-
-
-}
-.modal::v-deep .modal_body {
-  &-title {
-    font-weight: 700;
-    margin: 1rem 0;
   }
 }
 </style>
