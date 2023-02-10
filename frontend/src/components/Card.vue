@@ -1,6 +1,14 @@
 <template>
   <div class="card" v-bind:data-card-id="card.id">
-    <button @click="showModal = true; toggleClass();" class="delete">X</button>
+    <div class="card_options">
+      <button @click="toggleCardOptions = !toggleCardOptions" class="card_options-button"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical"  /></button>
+      <div v-show="toggleCardOptions" class="card_options-menu">
+        <div class="card_options-menu-item card_options-menu-title">ACTIONS</div>
+        <div class="card_options-menu-item">Modifier le job</div>
+        <div @click="showModal = true; toggleClass(); toggleCardOptions = false;" class="card_options-menu-item">Supprimer le job</div>
+      </div>
+    </div>
+    
     <Teleport to="#modals">
       <DeleteCardModal
         v-if="showModal"
@@ -65,6 +73,7 @@
       return {
         showModal: false,
         deleteIsActive: false,
+        toggleCardOptions: false,
       }
     },
     computed: {
@@ -74,7 +83,7 @@
     },
     methods: {
       toggleClass() {
-        this.deleteIsActive = !this.deleteIsActive
+        this.deleteIsActive = !this.deleteIsActive;
       },
       async deleteCard() {
         console.log("deleteCard()");
@@ -90,6 +99,7 @@
     font-weight: 700;
   }
   .card {
+    position: relative;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -173,5 +183,56 @@
   // Entretiens
   .card_interviews {
 
+  }
+
+  // Options d'une carte
+  .card_options {
+    &-button {
+      position: absolute;
+      bottom: .3rem;
+      right: .3rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,.2);
+      width: 2rem;
+      height: 2rem;
+      background-color: transparent;
+      & svg {
+        color: gray;
+      }
+    }
+    &-menu {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255,255,255,.8);
+      z-index: 1;
+      border-radius: 5px;
+
+      &-item {
+        padding: 0.5rem;
+        background-color: white;
+        &:not(:last-child):not(.card_options-menu-title) {
+          border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+        &:hover {
+          background-color: #f5f5f5;
+          cursor: pointer;
+        }
+      }
+      &-title {
+        background-color: #f5f5f5;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border-radius: 5px 5px 0 0;
+      }
+    }
   }
 </style>
