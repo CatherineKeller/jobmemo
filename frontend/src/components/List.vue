@@ -15,7 +15,7 @@
       <button @click="showModal = true" class="button">+ Ajouter un Job</button>
       <Teleport to="#modals">
         <CreateCardModal
-          v-show="showModal"
+          v-if="showModal"
           @close-modal="showModal = false"
           :listId="list.id"
           :typesList="typesList"
@@ -45,7 +45,7 @@
     data() {
       return {
         listTitle: this.listname(this.list),
-        showModal: false
+        showModal: false,
       }
     },
     
@@ -72,6 +72,9 @@
         }
         return listNameFr;
       },
+      test() {
+        console.log('test')
+      }
 
     }
   }
