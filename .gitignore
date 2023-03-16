@@ -4,4 +4,4 @@ data/
 logs/
 backend/logs/
 dist/
-sqitch.conf
+backend/sqitch.conf
